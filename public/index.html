@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudentFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Student Management</h1>
+    </nav>
+
+    <div class="container">
+
+        <div class="form-card">
+            <h2 id="formTitle">Add Student</h2>
+            <input type="hidden" id="studentId">
+
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="course" placeholder="Course">
+            <input type="number" id="marks" placeholder="Marks">
+
+            <button id="submitBtn" onclick="handleSubmit()">Add Student</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search student...">
+            <button onclick="searchStudents()">Search</button>
+        </div>
+
+        <h2 class="section-title">Students</h2>
+        <div id="studentGrid" class="grid"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
